@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## Sudoku Solver
 
-You can use the [editor on GitHub](https://github.com/asbeeny/sudoku-solver.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This site explores sudoku solving methods and computer algorithms. Currently this is under construction, so my sincerest apologies for all of the missing pieces. I hope you find it entertaining!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Basic rules for terms
 
-### Markdown
+A sudoku puzzle consists of a 9 &times; 9 square grid with smaller 3 &times; 3 subgrids, which we will call **blocks**. Since columns are just rotated rows, and vice versa, I usually refer to these generally as **lines**. So every line and block has 9 **cells**, each of which contain a numeral from 1-9. The goal of a sudoku is to fill in the empty cells so that each numeral appears in a line or block exactly once. Sudoku puzzles are given with a number of cells already filled in - these are called **clues**. If a numeral may be placed in a particular cell with the information available, then we say this numeral is a **candidate** in that cell. A proper sudoku has one and only one solution, that is, it is **unique**. If a sudoku cannot be solved, then we say it is has **no solution** (duh).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Human-solving methods
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/asbeeny/sudoku-solver.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The human brain is excellent at recognizing patterns, and this is probably why sudoku can be so addicting. We fill in numbers using various deductive methods, the simplest of which is done by looking at a line or a block with one empty cell. In this case, we start counting 1, 2, 3, ... checking off numerals that appear. If a number isn't present, then we fill the cell with this number. We build on this method by looking at a row, column or block, consider multiple candidates, then eliminate numbers that fail to work for intersecting rows, columns, or blocks.
