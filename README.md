@@ -9,3 +9,6 @@ A sudoku puzzle consists of a 9&times;9 square grid with smaller 3&times;3 subgr
 ## Human-solving methods
 
 The human brain is excellent at recognizing patterns, and this is probably why sudoku can be so addicting. We fill in numbers using various deductive methods, the simplest of which is done by looking at a line or a block with one empty cell. In this case, we start counting 1, 2, 3, ... checking off numerals that appear. If a number isn't present, then we fill the cell with this number. We build on this method by looking at a row, column or block, consider multiple candidates, then eliminate numbers that fail to work for intersecting rows, columns, or blocks.
+
+
+<iframe src="./src/app.html"></iframe>
