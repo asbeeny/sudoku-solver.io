@@ -4,7 +4,7 @@ This site explores sudoku solving methods and computer algorithms. Currently thi
 
 ## Basic rules for terms
 
-A sudoku puzzle consists of a 9 &times; 9 square grid with smaller 3 &times; 3 subgrids, which we will call **blocks**. Since columns are just rotated rows, and vice versa, I usually refer to these generally as **lines**. So every line and block has 9 **cells**, each of which contain a numeral from 1-9. The goal of a sudoku is to fill in the empty cells so that each numeral appears in a line or block exactly once. Sudoku puzzles are given with a number of cells already filled in - these are called **clues**. If a numeral may be placed in a particular cell with the information available, then we say this numeral is a **candidate** in that cell. A proper sudoku has one and only one solution, that is, it is **unique**. If a sudoku cannot be solved, then we say it is has **no solution** (duh).
+A sudoku puzzle consists of a 9&times;9 square grid with smaller 3&times;3 subgrids, which we will call **blocks**. Since columns are just rotated rows, and vice versa, I usually refer to these generally as **lines**. So every line and block has 9 **cells**, each of which contain a numeral from 1-9. The goal of a sudoku is to fill in the empty cells so that each numeral appears in a line or block exactly once. Sudoku puzzles are given with a number of cells already filled in - these are called **clues**. If a numeral may be placed in a particular cell with the information available, then we say this numeral is a **candidate** in that cell. A proper sudoku has one and only one solution, that is, it is **unique**. If a sudoku cannot be solved, then we say it is has **no solution** (duh).
 
 ## Human-solving methods
 
