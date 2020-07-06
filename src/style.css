@@ -1,0 +1,35 @@
+#sudokuBoard {
+  border-collapse: collapse;
+}
+
+#sudokuBoard tbody, #sudokuBoard colgroup{
+  border: 1pt solid #333;
+  border-collapse: collapse;
+}
+
+#sudokuBoard td {
+  display: fixed;
+  border: 0.5pt solid #aaa;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18pt;
+  width: 40px;
+  height: 40px;
+}
+
+.clue {
+  font-weight: 500;
+  color: #333;
+}
+
+.pen {
+  color: #2751db;
+}
+
+.active {
+  background-color: #bfc9ff;
+}
+
+.highlight {
+  background-color: #e1e7ee;
+}
